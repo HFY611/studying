@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>博文时尚</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <style>
+        #banner{position: relative;}
+        #banner .banner_list{width: 100%;position: relative;height: 470px;}
+        #banner .banner_list li{ width:100%; height:100%; background:center 0 no-repeat; position: absolute; left:
+    0; top:0; opacity: 0; z-index: 1;}
+        #banner .banner_list li.active{ opacity: 1; z-index: 10;}
+        #banner .banner_list a{ display: block; width:100%; height:100%;}
+        #banner .banner_btn{position: absolute; width: 100%; z-index: 20;bottom: 20px; text-align: center;height: 14px;}
+        #banner .banner_btn li{border-radius: 50%;display: inline-block; width:12px; height:12px;
+             border:2px solid white; border-radius: 50%; box-sizing: border-box; margin:0 6px; cursor: pointer;}
+        #banner .banner_btn li.active{background: white;}
+        #service{min-height: 412px;}
+        #service .service_list{margin-top: 33px;width: 100%;position: relative;}
+        #service .service_list img{width: 106px; height: 107px; margin: 0 auto;margin-bottom: 33px;}
+        #service .service_list ul{margin:0 auto;text-align: center;margin-left: 90px;}
+        #service .service_list li{float: left;margin-left:80px;}
+        #service .service_list p{margin-top: 22px;line-height: 38px;color:#646464;}
+        #usereg{background-color: #f8f8f8;padding-top: 55px;height: 460px;}
+        #usereg .area_title h3{color: skyblue;}
+        #usereg .area_title p{color:#646464;}
+        #usereg .user_list img{width: 342px; height: 183px; margin: 0 auto;margin-top: 40px;}
+        #usereg .user_list ul{margin:0 auto;margin-left: 129px;}
+        #usereg .user_list li{float: left;margin-left:19px;}
+        #usereg .view_btn{height: 38px;width: 178px;text-align: center;margin:0 auto;background-color: #66c5b4;
+            border-radius: 25px; line-height: 37px; font-size:14px; margin-top: 36px;}
+        #usereg .view_btn a{color: white;width: 100%;}
+        #new{min-height:450px; overflow: hidden;}
+        #new .news_block{margin-top: 59px;height: 194px;}
+        #new .news_list img{width: 234px; height: 194px;margin-left: 121px;}
+        #new .news_list tr{width: 365px;float: left; margin-left: 14px;margin-bottom: 45px;}
+        #new .news_list .the{width:71px; height:70px; border-right:1px solid #DCDCDC; text-align: center;}
+        #new .news_list p{margin-left: 15px;}
+        #new .news_list h1{color: #66c5b4;top: 12px;font-size:39px; display:block; font-weight: bold;}
+    </style>
+    
+</head>
+<body>
+    <div class="container" id="head">
+        <div class="head_logo l">
+            <a href="#">
+            <img src="./images/logo.png" alt=""> 
+             </a>
+        </div>
+            <ul class="head_menu r">
+                <li>
+                    <a href="#">ABOUT</a>
+                </li>
+                <li>
+                    <a href="#">CONTACT</a>
+                </li>
+                <li>
+                    <a href="#">CONTACT</a>
+                </li>
+                <li>
+                    <a href="#">PROTFOLIO</a>
+                </li>
+                <li>
+                    <a href="#">SERVICE</a>
+                </li>
+                <li>
+                    <a href="#">NEWS</a>
+                </li>
+            </ul>
+        </div>
+    <div class="container-fliud" id="banner">
+        <ul class="banner_list">
+            <li class="active">
+                 <a href="#">
+                 <img src="./images/banner.png" alt="">
+                 </a>
+             </li>
+             <li>
+                 <a href="#">
+                 <img src="./images/banner.png" alt="">
+                  </a>
+                  </li>
+              <li>
+                  <a href="#">
+                  <img src="./images/banner.png" alt="">
+                 </a>
+                </li>
+             <li>
+                 <a href="#">
+                  <img src="./images/banner.png" alt="">
+                 </a>
+             </li>
+     </ul>
+     <ol class="banner_btn">
+        <li class="active"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ol>
+    </div>
+    <div  class="container" id="service">
+        <div class="area_title">
+            <h3>服务范围</h3>
+            <p>OUR SERVICES</p>
+        </div>
+        <div class="service_list">
+            <ul>
+            <li>
+                <img src="./images/web1.png" alt="">
+                <h3>1.WEB DESIGN</h3>
+                <p>企业品牌网站设计/手机网站制作<br>动画网站创意设计</p>
+            </li>
+            <li>
+                <img src="./images/graphic1.png" alt="">
+                <h3>2.GRAPHIC DESIGN</h3>
+                <p>标志logo设计/产品宣传册设计<br>企业广告/海报设计</p>
+            </li>
+            <li>
+                <img src="./images/e-bussiness1.png" alt="">
+                <h3>3.E-BUSSINESS PLAN</h3>
+                <p>淘宝/天猫装修设计及运营推广<br>企业微博、微信营销</p>
+            </li>
+            <li>
+                <img src="./images/mail1.png" alt="">
+                <h3>4.MAILBOXAGENTS</h3>
+                <p>腾讯/网易企业邮箱品牌代理<br>个性化邮箱定制开发</p>
+            </li>
+        </ul>
+        </div>
+    </div>
+    <div class="container-fliud" id="usereg">
+        <div class="area_title">
+            <h3>{用户案例}</h3>
+            <p>With the best professional technology, to design the best innovative web site</p>
+        </div>
+        <div class="user_list clear">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="./images/20141121095216750.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/20141121095528549.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/20141121105856226.png" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="view_btn">
+            <a href="#">VIEW MORE</a>
+        </div>
+    </div>
+    <div class="container" id="new">
+        <div class="area_title">
+            <h3>最新资讯</h3>
+            <p>TEH LATEST NEWS</p>
+        </div>
+        <div class="news_block clear">
+            <table  class="news_list">
+                <tr>
+                    <td>
+                        <img src="./images/xs1.png">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="the">
+                        <h1>09</h1><br>
+                        <span>JAN</span>
+                    </td>
+                    <td class="that">
+                        <p>网站排名进入前三的技巧说明</p><br>
+                        <p>很多客户都会纳闷为什么自己的网站老是优化不到搜索引擎 首页，更不用说进首页前三了。那么网站优...</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="the">
+                        <h1>09</h1><br>
+                        <span>JAN</span>
+                    </td>
+                    <td>
+                        <p>网站排名进入前三的技巧说明</p><br>
+                        <p>很多客户都会纳闷为什么自己的网站老是优化不到搜索引擎 首页，更不用说进首页前三了。那么网站优...</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="the">
+                        <h1>09</h1><br>
+                        <span>JAN</span>
+                    </td>
+                    <td>
+                        <p>网站排名进入前三的技巧说明</p><br>
+                        <p>很多客户都会纳闷为什么自己的网站老是优化不到搜索引擎 首页，更不用说进首页前三了。那么网站优...</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="the">
+                        <h1>09</h1><br>
+                        <span>JAN</span>
+                    </td>
+                    <td>
+                        <p>网站排名进入前三的技巧说明</p><br>
+                        <p>很多客户都会纳闷为什么自己的网站老是优化不到搜索引擎 首页，更不用说进首页前三了。那么网站优...</p>
+                    </td>
+                </tr>
+            </table>
+           
+        </div>
+    </div>
+    <div id="foot" class="container-fluid">
+        <div class="container">
+            <p class="l">Copyright 2006- 2014 Bowenshangmei Culture All Rights Reserved</p>
+            <div class="r">
+                <a href="#">Home</a> | <a href="#">About</a> | <a href="#">Portfolio</a> | <a href="#">Contact</a>
+            </div>
+        </div>
+</body>
+</html>
